@@ -1,0 +1,11 @@
+type User {
+  userId: Int!
+  name: String
+  email: String!
+  password: String!
+  ambiente: String
+}
+
+type Query {
+  findByEmail(email: String): User
+}
